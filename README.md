@@ -6,7 +6,7 @@ To test the best combination of pretrained deep learning model and optimizer for
 
 ## Common components:
 ### Dataset
-Annotated images[^1] from the [ISIC 2016](https://challenge.isic-archive.com/data) challenge, Task 3 (Lesion classification) dataset, consisting of 900 dermoscopic lesion images in JPEG format for training and validation, distributed in two classes (727 images were labeled as ‘benign’, 173 as ‘malignant’) plus 379 test images of the exact same format as the training data, and associated ground truth for all images.
+Annotated images [1] from the [ISIC 2016](https://challenge.isic-archive.com/data) challenge, Task 3 (Lesion classification) dataset, consisting of 900 dermoscopic lesion images in JPEG format for training and validation, distributed in two classes (727 images were labeled as ‘benign’, 173 as ‘malignant’) plus 379 test images of the exact same format as the training data, and associated ground truth for all images.
 
 ### Common hyperparameters:
 - Dataset partition (e.g., 70% for training, 30% for validation)
@@ -40,7 +40,7 @@ A total of nine (3 x 3) combinations of:
 2. Open MATLAB.
 3. Open and edit the script `processImages.m` to match the location (absolute or relative path) of the training and validation images in your setup.
 4. Run the script `processImages.m` to read and process the images.
-5. Open the Experiment Manager app[^2] (you can type `experimentmanager` in the MATLAB Command Window).
+5. Open the Experiment Manager app [2] (you can type `experimentmanager` in the MATLAB Command Window).
 6. Select ... option.
 7. Select ...
 8. Configure ... (see figure below).
@@ -63,9 +63,9 @@ UNPIC is created using App Designer. You can use App Designer to edit the underl
 
 
 ## Notes
-[^1]: This examples uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
+[1] This example uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
 
-[^2]: [Experiment Manager App](https://www.mathworks.com/help/deeplearning/ref/experimentmanager-app.html)
+[2] [Experiment Manager App](https://www.mathworks.com/help/deeplearning/ref/experimentmanager-app.html)
 
 [3] ...
 
