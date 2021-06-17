@@ -47,15 +47,7 @@ A total of nine (3 x 3) combinations of:
 9. ...
 10.  with a trained image classification network. This network has been trained using transfer learning with the GoogLeNet pretrained network.
 
-
-
-
-The UNPIC app is attached as a supporting file (`UNPIC.mlapp`) and includes several visualisation techniques to help you explain what a network has learned. Once you have the app open, click **Help** to learn more about the techniques and methods implemented. 
-
-UNPIC is created using App Designer. You can use App Designer to edit the underlying settings of the methods or add additional methods to the app.
-
-
-![](App_Images/app_techniques2.png)
+![](figures/EM2.png)
 
 ## Additional remarks
 - You are encouraged to expand and adapt the example to your needs.
