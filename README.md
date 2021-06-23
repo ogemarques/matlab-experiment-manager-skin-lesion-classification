@@ -1,6 +1,6 @@
+[![View Managing medical image classification experiments on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/93980-managing-medical-image-classification-experiments)
 # Managing medical image classification experiments with MATLAB Experiment Manager App
 This repository shows an example of how to use MATLAB Experiment Manager for a medical image classification task.
-
 ## Experiment objective
 To test the best combination of pretrained deep learning model and optimizer for a binary (*malignant* or *benign*) skin lesion classification task using transfer learning.
 
