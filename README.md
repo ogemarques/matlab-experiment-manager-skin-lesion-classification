@@ -58,8 +58,8 @@ A total of nine (3 x 3) combinations of:
 - You are encouraged to expand and adapt the example to your needs.
 - The choice of pretrained networks and their hyperparameters (learning rate, mini-batch size, number of epochs, etc.) is merely illustrative. 
 - Most of the resulting Network/Solver combinations do not show a stellar performance and all of them show signs of overfitting (see figure below). 
-- 
-![](figures/EM2_edited.png). 
+  
+![](figures/EM2_edited.png)
 
 - You are encouraged to (use Experiment Manager to) tweak those choices and find a better solution.
 ## Notes
