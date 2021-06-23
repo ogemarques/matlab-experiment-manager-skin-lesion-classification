@@ -38,28 +38,26 @@ A total of nine (3 x 3) combinations of:
 ## Suggested steps
 1. Download or clone the repository.
 2. Open MATLAB.
-3. Edit the `ExperimentSetup.mlx` file to reflect the path to your selected dataset. 
-4. Open the Experiment Manager app [2] (you can type `experimentmanager` in the MATLAB Command Window).
-5. Select ... option.
-6. Select ...
-7. Configure ... (see figure below).
-8. ...
-9.   with a trained image classification network. This network has been trained using transfer learning with the GoogLeNet pretrained network.
+3. Edit the contents of the `dataFolder` variable in the `experiment1_setup.mlx` file to reflect the absolute path to your selected dataset<sup>[2](#myfootnote2)</sup>. 
+4. Open the Experiment Manager app (you can type `experimentmanager` in the MATLAB Command Window or select the app from the "APPS" ribbon).
+5. Select the "New Project" option and click on the "Create" button.
+6. On the next screen, select the "Image Classification Using Transfer Learning" option and click on the "ADD" button.
+7. Specify a folder for your project.
+8. Edit the textbox containing the name of the Setup Function to reflect the name `experiment1_setup`.
+9.  Configure (i.e., edit manually) the hyperparameters table to reflect your choice of `Solver` (`["adam" "sgdm" "rmsprop]`) and `Network` (`["squeezenet" "googlenet" "resnet18"]`) (see figure below).
+10. Copy the resulting `experiment1_setup.mlx` file to the project folder created by the Experiment Manager app.
+11. (Optionally) click the "Use Parallel" button to run experiments in parallel.
+12. Click the "Run" button and watch the progress bars change as the different trials are run.
+13. Once the experiment concludes, explore/sort/filter/annotate the results. 
+14. Save and close the project.
 
 ![](figures/EM2.png)
 
-## Additional remarks
 - You are encouraged to expand and adapt the example to your needs.
-- ...
-
-
+- The choice of pretrained networks and their hyperparameters (learning rate, mini-batch size, number of epochs, etc.) is merely illustrative. 
+- Most of the resulting Network/Solver combinations do not show a stellar performance and some show signs of overfitting. 
+- You are encouraged to (use Experiment Manager to) tweak those choices and find a better solution.
 ## Notes
 <a name="myfootnote1">[1]</a> This example uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
 
-[2] [Experiment Manager App](https://www.mathworks.com/help/deeplearning/ref/experimentmanager-app.html)
-
-[3] ...
-
-[4] ... 
-
-[5] ...
+<a name="myfootnote2">[2]</a> You can choose to use either the `data` folder or the `balanced_data` folder: both contain subfolders labeled `benign` and `malignant`.
