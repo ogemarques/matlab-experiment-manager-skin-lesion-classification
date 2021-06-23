@@ -4,11 +4,11 @@ This repository shows an example of how to use MATLAB Experiment Manager for a m
 ## Experiment objective
 To test the best combination of pretrained deep learning model and optimizer for a binary (*malignant* or *benign*) skin lesion classification task using transfer learning.
 
-## Common components:
+## Common components
 ### Dataset
-Annotated images [1] from the [ISIC 2016](https://challenge.isic-archive.com/data) challenge, Task 3 (Lesion classification) dataset, consisting of 900 dermoscopic lesion images in JPEG format for training and validation, distributed in two classes (727 images were labeled as ‘benign’, 173 as ‘malignant’) plus 379 test images of the exact same format as the training data, and associated ground truth for all images.
+Annotated images<sup>[1](#myfootnote1)</sup> from the [ISIC 2016](https://challenge.isic-archive.com/data) challenge, Task 3 (Lesion classification) dataset, consisting of 900 dermoscopic lesion images in JPEG format for training and validation, distributed in two classes (727 images were labeled as ‘benign’, 173 as ‘malignant’) plus 379 test images of the exact same format as the training data, and associated ground truth for all images.
 
-### Common hyperparameters:
+### Common hyperparameters
 - Dataset partition (e.g., 70% for training, 30% for validation)
 - Loss function
 - Mini-batch size
@@ -38,14 +38,13 @@ A total of nine (3 x 3) combinations of:
 ## Suggested steps
 1. Download or clone the repository.
 2. Open MATLAB.
-3. Open and edit the script `processImages.m` to match the location (absolute or relative path) of the training and validation images in your setup.
-4. Run the script `processImages.m` to read and process the images.
-5. Open the Experiment Manager app [2] (you can type `experimentmanager` in the MATLAB Command Window).
-6. Select ... option.
-7. Select ...
-8. Configure ... (see figure below).
-9. ...
-10.  with a trained image classification network. This network has been trained using transfer learning with the GoogLeNet pretrained network.
+3. Edit the `ExperimentSetup.mlx` file to reflect the path to your selected dataset. 
+4. Open the Experiment Manager app [2] (you can type `experimentmanager` in the MATLAB Command Window).
+5. Select ... option.
+6. Select ...
+7. Configure ... (see figure below).
+8. ...
+9.   with a trained image classification network. This network has been trained using transfer learning with the GoogLeNet pretrained network.
 
 ![](figures/EM2.png)
 
@@ -55,7 +54,7 @@ A total of nine (3 x 3) combinations of:
 
 
 ## Notes
-[1] This example uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
+<a name="myfootnote1">[1]</a> This example uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
 
 [2] [Experiment Manager App](https://www.mathworks.com/help/deeplearning/ref/experimentmanager-app.html)
 

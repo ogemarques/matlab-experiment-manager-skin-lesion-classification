@@ -1,7 +1,7 @@
 %% Populate folders for training images based on zip files from ISBI2016 ISIC Part 3
 
-%% Go to the folder where you want to keep your image data (e.g., 'path')
-cd 'path'
+%% Go to 'root' folder
+cd '/Users/oge/Projects/MATLAB/SkinLesion'
 
 %% Create folders (only once)
 status = exist('benign', 'dir');
