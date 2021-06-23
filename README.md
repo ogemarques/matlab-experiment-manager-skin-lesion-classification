@@ -44,14 +44,19 @@ A total of nine (3 x 3) combinations of:
 6. On the next screen, select the "Image Classification Using Transfer Learning" option and click on the "ADD" button.
 7. Specify a folder for your project.
 8. Edit the textbox containing the name of the Setup Function to reflect the name `experiment1_setup`.
-9.  Configure (i.e., edit manually) the hyperparameters table to reflect your choice of `Solver` (`["adam" "sgdm" "rmsprop]`) and `Network` (`["squeezenet" "googlenet" "resnet18"]`) (see figure below).
+9.  Configure (i.e., edit manually) the hyperparameters table to reflect your choice of `Solver` (`["adam" "sgdm" "rmsprop]`) and `Network` (`["squeezenet" "googlenet" "resnet18"]`) (see figure below). 
+
+![](figures/EM1_edited.png)
+
 10. Copy the resulting `experiment1_setup.mlx` file to the project folder created by the Experiment Manager app.
 11. (Optionally) click the "Use Parallel" button to run experiments in parallel.
 12. Click the "Run" button and watch the progress bars change as the different trials are run.
-13. Once the experiment concludes, explore/sort/filter/annotate the results. 
-14. Save and close the project.
+13. Once the experiment concludes, explore/sort/filter/annotate the results (see figure below). 
 
 ![](figures/EM2.png)
+
+14. Save and close the project.
+## Additional remarks
 
 - You are encouraged to expand and adapt the example to your needs.
 - The choice of pretrained networks and their hyperparameters (learning rate, mini-batch size, number of epochs, etc.) is merely illustrative. 
