@@ -51,16 +51,16 @@ A total of nine (3 x 3) combinations of:
 10. Copy the resulting `experiment1_setup.mlx` file to the project folder created by the Experiment Manager app.
 11. (Optionally) click the "Use Parallel" button to run experiments in parallel.
 12. Click the "Run" button and watch the progress bars change as the different trials are run.
-13. Once the experiment concludes, explore/sort/filter/annotate the results (see figure below). 
-
-![](figures/EM2.png)
-
+13. Once the experiment concludes, explore/sort/filter/annotate the results. 
 14. Save and close the project.
 ## Additional remarks
 
 - You are encouraged to expand and adapt the example to your needs.
 - The choice of pretrained networks and their hyperparameters (learning rate, mini-batch size, number of epochs, etc.) is merely illustrative. 
-- Most of the resulting Network/Solver combinations do not show a stellar performance and some show signs of overfitting. 
+- Most of the resulting Network/Solver combinations do not show a stellar performance and all of them show signs of overfitting (see figure below). 
+- 
+![](figures/EM2_edited.png). 
+
 - You are encouraged to (use Experiment Manager to) tweak those choices and find a better solution.
 ## Notes
 <a name="myfootnote1">[1]</a> This example uses a small subset of images to make it easier to get started without having to worry about large downloads and long training times.   
